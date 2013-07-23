@@ -1,4 +1,6 @@
 UserModel::Application.routes.draw do
+  get "/" => 'users#new', as: 'signup'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
