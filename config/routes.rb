@@ -1,5 +1,6 @@
 UserModel::Application.routes.draw do
-  get "/" => 'users#new', as: 'signup'
+  resources :users
+  root :to => 'users#new'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
